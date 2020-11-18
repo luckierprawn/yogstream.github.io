@@ -25,6 +25,7 @@
                 </div>
             </div>
         </div>
+        <button onclick="chat()" class="w3-button w3-grey w3-hover-blue w3-round" style="font-weight:bold;font-size:small;">Open Chat</button>
     </div>
     <br />
 
@@ -42,7 +43,12 @@
                 if (event.target == modal) {
                 modal.style.display = "none";
             }
-        }
+            }
+
+            function chat() {
+                var chatWindow = window.open("https://www.twitch.tv/popout/yogscast/chat?popout=true", '_blank', 'width=475,height=650');
+                
+            }
     </script>
 
 </body>
