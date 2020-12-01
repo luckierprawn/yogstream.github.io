@@ -27,7 +27,7 @@
             </div>
         </div>
         <button onclick="chat()" class="w3-button w3-hover-blue w3-round" style="font-weight:bold;font-size:18px;font-family:Mountains of Christmas;background-color:#bb0700;color:#00B32C">Open Chat</button>
-        <button onclick="login()" class="w3-button w3-grey w3-hover-blue" style="font-weight:bold;font-size:18px;">Login to Twitch</button>
+        <button onclick="login()" class="w3-button w3-hover-blue w3-round" style="font-weight:bold;font-size:18px;font-family:Mountains of Christmas;background-color:#bb0700;color:#00B32C">Login to Twitch</button>
     </div>
     <br />
 
@@ -53,7 +53,8 @@
             }
 
             function login() {
-                var loginWindow = window.open("https://id.twitch.tv/oauth2/authorize?response_type=code&client_id=dut2ga99dpfpbtcb5639pxr1jfx1i7&redirect_uri=https://www.jinglejam.tk");
+                alert("Close window once logged in");
+                var chatWindow = window.open("http://www.twitch.tv/login", '_blank', 'width=475,height=650');
             }
     </script>
 
